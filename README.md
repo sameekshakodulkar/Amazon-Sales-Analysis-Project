@@ -19,9 +19,7 @@ To address these challenges, a comprehensive data analysis of Amazon sales data 
 
 Include why solving this problem or exploring this opportunity is important
 
-<Zasdfghjklertyueirghjg> 
 
-Data Source
 
-https://www.kaggle.com/datasets/arpit2712/amazonsalesreport/data 
+
 
