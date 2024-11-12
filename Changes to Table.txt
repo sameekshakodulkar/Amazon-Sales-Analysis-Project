@@ -1,0 +1,40 @@
+I First change
+Merge Queries
+Product Inner join order_details on product_code expand buy_price
+Employee Table Inner join offices on office code expand on country and cities
+
+To convert column into currency change the datatype to fixed decimal number
+
+II Second Change
+Custom Column in order details table
+1.Margin= Buy_Price*Quantity name changed to Total_Buy_Price
+2.Profit=Sale-Margin
+3.Sales=priceEach*Quantity_ordered
+
+III Third Change
+Measures in order details table
+1.total_sales=sum(order details[Sales])
+2.total_profit=sum(order details[profit])
+
+
+III Fourth Change
+Power Query
+Add new column
+1.stock requirement= if(products[quantityInStock] > 500, "No","Yes")
+Add conditional column in product
+More_Stock = 
+if
+(column name)quantity_in_stock >= (value)1000 (output) not required
+else
+(output)required
+
+Select both the columns and select Add Column->Date tab
+shipping_days=order_date-shipped_date
+
+Add Condition column in product = 
+if
+(column name)shipping_days <= (value)4 (output) good
+else if
+(column name)shipping_days >= (value)10 (output) bad
+else
+(output)average
